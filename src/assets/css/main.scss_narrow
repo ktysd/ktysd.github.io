@@ -1,0 +1,25 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+.masthead {
+  &__inner-wrap {
+    padding: .2em;
+  }
+}
+
+#main {
+  margin-top: 0.7em;
+}
+
+.nav__sub-title {
+  margin: 0.1rem 0 0;
+  padding: 0.2rem 0 0;
+}
+
+

@@ -1,0 +1,129 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+.page__content {
+  h2 {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $border-color;
+  }
+
+  p,
+  li,
+  dl {
+    font-size: 0.9em;
+  }
+}
+
+.toc__menu {
+  font-size: 0.9rem;
+  a {
+    font-size: 0.75rem;
+  }
+}
+
+.masthead {
+  &__inner-wrap {
+    padding: .2em 1em;
+  }
+}
+
+#main {
+  margin-top: 0.7em;
+}
+
+.nav__sub-title {
+  margin: 0.1rem 0 0;
+  padding: 0.2rem 0 0;
+}
+
+@media print {
+  html {
+    font-size: 14px;
+  }
+  body {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  table,
+  blockquote,
+  pre,
+  figure,
+  code,
+  li,
+  hr,
+  ul,
+  ol,
+  a,
+  tr {
+    page-break-inside: auto; /*always*/
+    page-break-before: auto; 
+    page-break-after: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    page-break-before: auto;
+    page-break-after: avoid;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  td,
+  th {
+    padding: 8px 16px;
+  }
+
+  .content-print {
+    top:0 !IMPORTANT;
+    left:0 !IMPORTANT;
+    width:172mm !IMPORTANT;
+    height:251mm !IMPORTANT;
+  }
+
+  .print_pages:last-child {
+    page-break-after: auto;
+  }
+
+  .breadcrumbs {
+    display: none !important;
+    height: 1px !important;
+  }
+
+}
+

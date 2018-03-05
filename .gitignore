@@ -1,0 +1,6 @@
+*.gem
+.bundle
+.jekyll-metadata
+.sass-cache
+codekit-config.json
+Gemfile.lock

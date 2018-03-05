@@ -1,0 +1,781 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>各種演算など - 吉田の教材文庫</title>
+<meta name="description" content="講義と書籍のサポートページ">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="吉田の教材文庫">
+<meta property="og:title" content="各種演算など">
+<meta property="og:url" content="https://ktysd.github.io/edu/lec/scilab/2/">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://ktysd.github.io/edu/lec/scilab/2/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "吉田勝俊",
+      "url": "https://ktysd.github.io/edu",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://ktysd.github.io/edu/feed.xml" type="application/atom+xml" rel="alternate" title="吉田の教材文庫 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://ktysd.github.io/edu/assets/css/main.css">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://ktysd.github.io/edu/">吉田の教材文庫</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://ktysd.github.io/edu/" >Top Page</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">メニュー</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="https://ktysd.github.io/edu/" itemprop="item"><span itemprop="name">ホーム</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="https://ktysd.github.io/edu/lec" itemprop="item"><span itemprop="name">Lec</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="https://ktysd.github.io/edu/scilab" itemprop="item"><span itemprop="name">Scilab</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">各種演算など</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">メニュー</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">書籍サポート</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu/ds/" class="">動的システム入門</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">解くための材料力学</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://ktysd.github.io/edu/lec/scilab/"><span class="nav__sub-title">Scilab 超入門</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu/lec/scilab/1/" class="">Scilab の基本操作</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu/lec/scilab/2/" class="active">各種演算など</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu/lec/scilab/3/" class="">プログラム・ファイルの作成</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu/lec/scilab/4/" class="">プログラム・ファイルの実行</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu/lec/scilab/5/" class="">グラフの印刷</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">講義資料</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu/lec/mdyn/" class="">機械力学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">ロボット力学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">ロボット力学特論</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">ランダム現象と状態推定</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">Excelで学ぶ振動基礎(7h)</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">宮崎大学：動的システム</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">動的平衡と複雑系の科学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">教員免許更新講習</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">その他</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">コンセプトマップ</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">各種手引き</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://ktysd.github.io/edu" class="">過去の資料</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">サイトマップ</span>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="各種演算など">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">各種演算など
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#四則演算べき乗">四則演算・べき乗</a></li>
+  <li><a href="#ベクトル行列">ベクトル・行列</a></li>
+  <li><a href="#行列とベクトルの積">行列とベクトルの積</a></li>
+  <li><a href="#複素数-n-次方程式">複素数・ n 次方程式</a></li>
+  <li><a href="#ユーザー関数の定義">ユーザー関数の定義</a></li>
+  <li><a href="#関数のグラフ">関数のグラフ</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p><a href="../1">«ひとつ前へ</a></p>
+
+<h3 id="四則演算べき乗">四則演算・べき乗</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--&gt;1+2  ← キーボード入力(1+2の直後にEnter)
+
+  ans  =
+    3.  ← Scilabが出した答え
+
+--&gt;     ← 次の入力待ち
+</code></pre></div></div>
+
+<h3 id="ベクトル行列">ベクトル・行列</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--&gt;v=[1,2,3]            //横ベクトル
+
+ v  =
+    1.    2.    3.
+
+--&gt;x=[1;2;3]            //縦ベクトル
+
+ x  =
+    1.
+    2.
+    3.
+
+--&gt;x(2)          //ベクトルの第2成分
+
+ ans  =
+    2.
+
+--&gt;A=[-1,2,3; 4,5,6; 7,8,9]  //行列
+
+ A  =
+  - 1.    2.    3.
+    4.    5.    6.
+    7.    8.    9.
+
+--&gt;A(2,1)         //行列の2行1列成分
+
+ ans  =
+    4.
+
+--&gt;A(2,:)         //2行目の行ベクトル
+
+ ans  =
+    4.    5.    6.
+
+--&gt;A(:,1)         //1列目の列ベクトル
+
+ ans  =
+  - 1.
+    4.
+    7.
+
+--&gt;A'                   //行列の転置
+
+ ans  =
+  - 1.    4.    7.
+    2.    5.    8.
+    3.    6.    9.
+
+--&gt;B=diag([1,2,-3])     //対角行列
+
+ B  =
+    1.    0.    0.
+    0.    2.    0.
+    0.    0.  - 3.
+</code></pre></div></div>
+
+<h3 id="行列とベクトルの積">行列とベクトルの積</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--&gt;v=[1,2,3]            //横ベクトル
+
+ v  =
+    1.    2.    3.
+
+--&gt;x=[1;2;3]            //縦ベクトル
+
+ x  =
+    1.
+    2.
+    3.
+
+--&gt;x(2)          //ベクトルの第2成分
+
+ ans  =
+    2.
+
+--&gt;A=[-1,2,3; 4,5,6; 7,8,9]  //行列
+
+ A  =
+  - 1.    2.    3.
+    4.    5.    6.
+    7.    8.    9.
+
+--&gt;A(2,1)         //行列の2行1列成分
+
+ ans  =
+    4.
+
+--&gt;A(2,:)         //2行目の行ベクトル
+
+ ans  =
+    4.    5.    6.
+
+--&gt;A(:,1)         //1列目の列ベクトル
+
+ ans  =
+  - 1.
+    4.
+    7.
+
+--&gt;A'                   //行列の転置
+
+ ans  =
+  - 1.    4.    7.
+    2.    5.    8.
+    3.    6.    9.
+
+--&gt;B=diag([1,2,-3])     //対角行列
+
+ B  =
+    1.    0.    0.
+    0.    2.    0.
+    0.    0.  - 3.
+</code></pre></div></div>
+
+<h3 id="複素数-n-次方程式">複素数・ n 次方程式</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--&gt;%i         //虚数単位
+
+ %i  =
+     i   
+
+--&gt;s=3+4*%i   //複素数
+
+ s  =
+    3. + 4.i
+
+--&gt;real(s)    //実部
+
+ ans  =
+    3.
+
+--&gt;imag(s)    //虚部
+
+ ans  =
+    4.
+
+--&gt;abs(s)     //絶対値
+
+ ans  =
+    5.
+
+--&gt;atan(imag(s),real(s)) //偏角 = arctan(虚部,実部)
+
+ ans  =
+    0.9272952
+                              2
+--&gt;roots([1,2,5])     //2次方程式 s + 2s + 5 = 0 の根
+
+ ans  =
+  - 1. + 2.i
+  - 1. - 2.i
+                                  3    2
+--&gt;roots([1,2,5,7])   //3次方程式 s + 2s + 5s + 7 = 0 の根
+
+ ans  =
+  - 0.1980924 + 2.0797481i
+  - 0.1980924 - 2.0797481i
+  - 1.6038152
+固有値・固有ベクトル
+--&gt;inv(A)                     //逆行列
+
+ ans  =
+  - 0.5    1.         - 0.5       
+    1.   - 5.           3.        
+  - 0.5    3.6666667  - 2.1666667
+
+--&gt;spec(A)                     //行列の固有値のみ
+
+ ans  =
+    15.914193
+  - 2.7785    
+  - 0.1356926
+
+--&gt;[T,ss]=spec(A)              //固有値・固有ベクトル
+
+ ss  =
+    15.914193    0         0         
+    0          - 2.7785    0         
+    0            0       - 0.1356926
+
+ T  =
+  - 0.2084548  - 0.8843559    0.1585656
+  - 0.5287250    0.1036839  - 0.7998300
+  - 0.8227979    0.4551530    0.5789032  
+
+--&gt;y = poly(A,"s")  //Aの固有多項式
+
+ y  =
+                 2   3
+  - 6 - 46s - 13s + s  
+
+--&gt;roots(y)         //固有方程式 y=0 の根
+
+ ans  =
+    15.914193       //spec(A)で求めた固有値と一致する
+  - 2.7785    
+  - 0.1356926
+</code></pre></div></div>
+
+<h3 id="ユーザー関数の定義">ユーザー関数の定義</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--&gt;function y=angle(s) //１変数関数の定義
+--&gt;y=atan(imag(s),real(s)); //偏角 = arctan(虚部,実部)// ; を忘れるな！
+--&gt;endfunction         //←ここまで
+
+--&gt;angle(3+4*%i)       //偏角．5.3.4節の計算と一致
+
+ ans  =
+    0.9272952
+
+--&gt;function y=g(m,c,k)  //３変数関数
+--&gt;y=roots([m,c,k]);
+--&gt;endfunction          //←ここまで
+
+--&gt;g(1,0.2,2)
+
+ ans  =
+  - 0.1 + 1.4106736i
+  - 0.1 - 1.4106736i
+</code></pre></div></div>
+
+<h3 id="関数のグラフ">関数のグラフ</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--&gt;tt=linspace(0,2,5)'  //0〜2を5分割した等差数列ベクトルの転置
+
+ tt  =
+    0.  
+    0.5
+    1.  
+    1.5
+    2.  
+
+--&gt;yy = sin(tt) //[sin(0),sin(0.5),sin(1.5),sin(1),sin(2)]' の意味になる
+
+ yy  =
+    0.        
+    0.4794255
+    0.8414710
+    0.9974950
+    0.9092974
+
+--&gt;clf();             //グラフのリセット
+
+--&gt;plot(tt,yy)        //2次元プロット
+</code></pre></div></div>
+
+<p><a href="../3">»次へ</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="検索キーワードを入力してください..." />
+    <div id="results" class="results"></div></div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>フォロー</strong></li>
+    
+    
+    
+    
+    
+    
+    <li><a href="https://ktysd.github.io/edu/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 吉田勝俊. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="https://ktysd.github.io/edu/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+
+
+<script src="https://ktysd.github.io/edu/assets/js/lunr/lunr.min.js"></script>
+<script src="https://ktysd.github.io/edu/assets/js/lunr/lunr-store.js"></script>
+<script src="https://ktysd.github.io/edu/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  </body>
+</html>
