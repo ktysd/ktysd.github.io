@@ -4830,6 +4830,10 @@ a.reversefootnote:hover {
   padding: .2em 1em;
 }
 
+.masthead__menu-item {
+  font-size: 0.75rem;
+}
+
 #main {
   margin-top: 0.7em;
 }
