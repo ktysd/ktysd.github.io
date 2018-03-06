@@ -4815,12 +4815,19 @@ a.reversefootnote:hover {
 }
 .page__content p,
 .page__content li,
-.page__content dl {
-  font-size: 0.9em;
+.page__content dl,
+.page__content dt {
+  font-size: 0.75rem;
+}
+.page__content dd {
+  font-size: 0.75rem;
 }
 
-.toc__menu {
-  font-size: 0.9rem;
+.toc__menu p,
+.toc__menu li,
+.toc__menu dl,
+.toc__menu dt {
+  font-size: 0.85rem;
 }
 .toc__menu a {
   font-size: 0.75rem;
@@ -4831,7 +4838,7 @@ a.reversefootnote:hover {
 }
 
 .masthead__menu-item {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }
 
 #main {
@@ -4839,7 +4846,7 @@ a.reversefootnote:hover {
 }
 
 .nav__sub-title {
-  margin: 0.1rem 0 0;
+  margin: 0.5rem 0 0.2rem 0;
   padding: 0.2rem 0 0;
 }
 
