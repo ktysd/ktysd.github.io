@@ -1,1 +1,0 @@
-for i in *.png; do convert -geometry 60% $i ../$i; done
