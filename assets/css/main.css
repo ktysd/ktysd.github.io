@@ -548,7 +548,7 @@ a:focus, button:focus {
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: #fffbfd;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -1124,7 +1124,7 @@ select {
   padding: 0.25em;
   margin-bottom: 0.5em;
   color: #494e52;
-  background-color: #fff;
+  background-color: #fffbfd;
   border: #f2f3f3;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
@@ -2216,7 +2216,7 @@ th {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  background: #fff;
+  background: #fffbfd;
 }
 .greedy-nav a {
   display: block;
@@ -2284,7 +2284,7 @@ th {
   padding: 5px;
   border: 1px solid #f2f3f3;
   border-radius: 4px;
-  background: #fff;
+  background: #fffbfd;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .greedy-nav .hidden-links.hidden {
@@ -2319,7 +2319,7 @@ th {
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: #fff transparent;
+  border-color: #fffbfd transparent;
   display: block;
   z-index: 1;
 }
@@ -2497,7 +2497,7 @@ th {
   color: #7a8288;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #fff;
+  background-color: #fffbfd;
   border: 1px solid #f2f3f3;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
@@ -4467,7 +4467,7 @@ a.reversefootnote:hover {
   list-style-type: none;
   border: 1px solid #f2f3f3;
   border-radius: 4px;
-  background: #fff;
+  background: #fffbfd;
   z-index: -1;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   cursor: default;
@@ -4512,7 +4512,7 @@ a.reversefootnote:hover {
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: #fff transparent;
+  border-color: #fffbfd transparent;
   z-index: 1;
 }
 @media (min-width: 64em) {
@@ -4809,28 +4809,33 @@ a.reversefootnote:hover {
     height: 1px !important;
   }
 }
+#main {
+  margin-top: 0.7em;
+}
+
 .page__content h2 {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #f2f3f3;
 }
-.page__content p,
-.page__content li,
+.page__content ul,
+.page__content ol,
 .page__content dl,
 .page__content dt {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
+.page__content p,
+.page__content li,
 .page__content dd {
   font-size: 0.75rem;
 }
-
-.toc__menu p,
-.toc__menu li,
-.toc__menu dl,
-.toc__menu dt {
-  font-size: 0.85rem;
-}
-.toc__menu a {
-  font-size: 0.75rem;
+.page__content ul,
+.page__content ol,
+.page__content dl,
+.page__content p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .masthead__inner-wrap {
@@ -4841,13 +4846,31 @@ a.reversefootnote:hover {
   font-size: 0.7rem;
 }
 
-#main {
-  margin-top: 0.7em;
+.toc {
+  font-size: 0.95rem;
 }
 
-.nav__sub-title {
-  margin: 0.5rem 0 0.2rem 0;
-  padding: 0.2rem 0 0;
+.toc__menu a,
+.toc__menu li {
+  font-size: 0.7rem;
+  padding: 0.2rem;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__items span {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+.nav__items ul {
+  padding: 0 0 0.7rem 0.7rem;
+}
+.nav__items li {
+  font-size: 0.7rem;
 }
 
 @media print {
@@ -4860,23 +4883,6 @@ a.reversefootnote:hover {
     line-height: 1.2;
   }
 
-  table,
-  blockquote,
-  pre,
-  figure,
-  code,
-  li,
-  hr,
-  ul,
-  ol,
-  a,
-  tr {
-    page-break-inside: auto;
-    /*always*/
-    page-break-before: auto;
-    page-break-after: auto;
-  }
-
   h1,
   h2,
   h3,
@@ -4884,10 +4890,8 @@ a.reversefootnote:hover {
   h5,
   h6 {
     line-height: 1.2;
-    margin-bottom: 0.75rem;
-    margin-top: 0;
-    page-break-before: auto;
-    page-break-after: avoid;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
   }
 
   h1 {
@@ -4914,9 +4918,12 @@ a.reversefootnote:hover {
     font-size: 1rem;
   }
 
-  td,
-  th {
-    padding: 8px 16px;
+  abbr[title]:after,
+  acronym[title]:after,
+  a[href^='http://']:after,
+  a[href^='https://']:after,
+  a[href^='ftp://']:after {
+    content: none;
   }
 
   .content-print {
