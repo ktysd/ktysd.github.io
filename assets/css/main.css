@@ -4817,6 +4817,12 @@ a.reversefootnote:hover {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #ccc;
 }
+.page__content h3 {
+  margin-top: 1.5em;
+}
+.page__content h4 {
+  margin-top: 1em;
+}
 .page__content ul,
 .page__content ol,
 .page__content dl,
@@ -4837,6 +4843,12 @@ a.reversefootnote:hover {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
+.page__content li {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 .masthead__inner-wrap {
   padding: .2em 1em;
@@ -4848,6 +4860,10 @@ a.reversefootnote:hover {
 
 .toc {
   font-size: 0.95rem;
+}
+.toc h4 {
+  margin-top: 0;
+  padding-left: 0.5rem;
 }
 
 .toc__menu a,

@@ -143,52 +143,6 @@
       
 
 
-  
-    
-
-
-
-<nav class="breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    
-    
-    
-      
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://ktysd.github.io/" itemprop="item"><span itemprop="name">ホーム</span></a>
-          <meta itemprop="position" content="1" />
-        </li>
-        <span class="sep">/</span>
-      
-      
-        
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://ktysd.github.io/assets" itemprop="item"><span itemprop="name">Assets</span></a>
-          <meta itemprop="position" content="2" />
-        </li>
-        <span class="sep">/</span>
-      
-    
-      
-      
-        
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://ktysd.github.io/css" itemprop="item"><span itemprop="name">Css</span></a>
-          <meta itemprop="position" content="3" />
-        </li>
-        <span class="sep">/</span>
-      
-    
-      
-      
-        <li class="current"></li>
-      
-    
-  </ol>
-</nav>
-
-  
-
 
 <div id="main" role="main">
   
