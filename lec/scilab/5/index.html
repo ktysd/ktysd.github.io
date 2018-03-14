@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>機械力学 - 吉田の教材文庫</title>
+<!-- begin _includes/seo.html --><title>グラフの印刷 - 吉田の教材文庫</title>
 <meta name="description" content="講義と書籍のサポートページ">
 
 
@@ -17,8 +17,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="吉田の教材文庫">
-<meta property="og:title" content="機械力学">
-<meta property="og:url" content="https://ktysd.github.io/%E6%A9%9F%E6%A2%B0%E5%8A%9B%E5%AD%A6/">
+<meta property="og:title" content="グラフの印刷">
+<meta property="og:url" content="https://ktysd.github.io/lec/scilab/5/">
 
 
 
@@ -36,7 +36,7 @@
   
 
 
-<link rel="canonical" href="https://ktysd.github.io/%E6%A9%9F%E6%A2%B0%E5%8A%9B%E5%AD%A6/">
+<link rel="canonical" href="https://ktysd.github.io/lec/scilab/5/">
 
 
 
@@ -164,7 +164,29 @@
         <span class="sep">/</span>
       
       
-        <li class="current">機械力学</li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/lec" itemprop="item"><span itemprop="name">Lec</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+      
+      
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/lec/scilab" itemprop="item"><span itemprop="name">Scilab</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+      
+      
+        <li class="current">グラフの印刷</li>
       
     
   </ol>
@@ -269,7 +291,7 @@
             
             
 
-            <li><a href="https://ktysd.github.io/lec/scilab/5/" class="">グラフの印刷</a></li>
+            <li><a href="https://ktysd.github.io/lec/scilab/5/" class="active">グラフの印刷</a></li>
           
         </ul>
         
@@ -403,7 +425,7 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="機械力学">
+    <meta itemprop="headline" content="グラフの印刷">
     
     
     
@@ -411,7 +433,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">機械力学
+          <h1 class="page__title" itemprop="headline">グラフの印刷
 </h1>
           
         </header>
@@ -423,86 +445,36 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
               <ul class="toc__menu">
-  <li><a href="#授業内容">授業内容</a></li>
-  <li><a href="#テキストのダウンロード">テキストのダウンロード</a></li>
-  <li><a href="#プログラム例">プログラム例</a></li>
-  <li><a href="#お知らせ">お知らせ</a></li>
+  <li><a href="#ウィンドウ画像をキャプチャ">ウィンドウ画像をキャプチャ</a></li>
+  <li><a href="#ワープロにペーストして印刷">ワープロにペーストして印刷</a></li>
 </ul>
             </nav>
           </aside>
         
-        
-<p>宇都宮大学工学部 機械システム工学科 「機械力学」</p>
+        <p><a href="../4">«ひとつ前へ</a></p>
 
-<h3 id="授業内容">授業内容</h3>
+<h3 id="ウィンドウ画像をキャプチャ">ウィンドウ画像をキャプチャ</h3>
 
-<dl>
-  <dt>第1週　ベクトル化</dt>
-  <dd><a href="slides/01.pdf">スライド.pdf</a></dd>
-  <dt>第2週　力の合成と分解</dt>
-  <dd><a href="slides/02.pdf">スライド.pdf</a></dd>
-  <dd><a href="ex/01.pdf">レポート出題（第１回）.pdf</a>　（提出用紙 <a href="files/ReportDaishi.pdf">PDF</a>，<a href="files/ReportDaishi.doc">Word</a>）</dd>
-  <dt>第3週　トルクとその合成</dt>
-  <dd><a href="slides/03.pdf">スライド.pdf</a></dd>
-  <dt>第4週　剛体に働く力</dt>
-  <dd><a href="slides/04.pdf">スライド.pdf</a></dd>
-  <dd><a href="ex/02.pdf">レポート出題（第2回）.pdf</a>　（提出用紙 <a href="files/ReportDaishi.pdf">PDF</a>，<a href="files/ReportDaishi.doc">Word</a>）</dd>
-  <dt>第5週　剛体の重心１</dt>
-  <dd><a href="slides/05.pdf">スライド.pdf</a></dd>
-  <dt>第6週　剛体の重心２</dt>
-  <dd><a href="slides/06.pdf">スライド.pdf</a></dd>
-  <dd><a href="ex/03.pdf">レポート出題（第3回）.pdf</a>　（提出用紙 <a href="files/ReportDaishi.pdf">PDF</a>，<a href="files/ReportDaishi.doc">Word</a>）</dd>
-  <dd>ついでにクリック！ <a href="https://docs.google.com/spreadsheet/viewform?formkey=dG9hT2ZmQnQ5V29fbXlzTHZBd2Z4VVE6MA">»中間アンケート</a></dd>
-  <dt>第7週　質点の運動</dt>
-  <dd><a href="slides/07.pdf">スライド.pdf</a></dd>
-  <dt>第8週　剛体の運動１</dt>
-  <dd><a href="slides/08.pdf">スライド.pdf</a></dd>
-  <dt>第9週　剛体の運動２</dt>
-  <dd><a href="slides/09.pdf">スライド.pdf</a></dd>
-  <dd><a href="ex/04.pdf">レポート出題（第4回）.pdf</a>　（提出用紙 <a href="files/ReportDaishi.pdf">PDF</a>，<a href="files/ReportDaishi.doc">Word</a>）</dd>
-  <dt>第10週　運動量の保存則</dt>
-  <dd><a href="slides/10.pdf">スライド.pdf</a></dd>
-  <dd><a href="3d">»関連動画を見る！</a></dd>
-  <dt>第11週　エネルギーの保存則</dt>
-  <dd><a href="slides/11.pdf">スライド.pdf</a></dd>
-  <dd><a href="ex/05.pdf">レポート出題（第5回）.pdf</a>　（提出用紙 <a href="files/ReportDaishi.pdf">PDF</a>，<a href="files/ReportDaishi.doc">Word</a>）</dd>
-  <dt>第12週　ロボットの運動方程式</dt>
-  <dd><a href="slides/12.pdf">スライド.pdf</a></dd>
-  <dt>第13週　ロボットシミュレーション　※基盤セ</dt>
-  <dd><a href="slides/13.pdf">スライド.pdf</a></dd>
-  <dd><a href="ex/06.pdf">レポート出題（第6回）.pdf</a>　（提出用紙 <a href="files/ReportDaishi.pdf">PDF</a>，<a href="files/ReportDaishi.doc">Word</a>）</dd>
-</dl>
+<p>ウィンドウの画像をクリップボードに保存する．
+グラフィック・ウィンドウをクリックしてアクティブにした状態で，[Alt] キーを押しながら [Print Screen] (Prt Sc等)を押せばよい．</p>
+
+<p><img src="../img/key_prs_s.png" alt="PrtSc" /></p>
+
+<p><img src="../img/key_alt_s.png" alt="Alt" /></p>
+
+<h3 id="ワープロにペーストして印刷">ワープロにペーストして印刷</h3>
+
+<p>キャプチャしたウィンドウ画像をワープロにペーストし，ワープロ文書として印刷する．
+受講に向けたアドバイス</p>
 
 <ul>
-  <li>レポートには，K,Lの２種類の値を記し，対応する運動状態をコマ送り（最低３コマ程度）で示せ．考察を忘れぬこと．</li>
+  <li>他人のものと区別するため必ず「学籍番号」を記せ．</li>
+  <li>条件や考察をメモしておけば，レポート等で流用可．</li>
 </ul>
 
-<dl>
-  <dt>第14週　振動と固有値　※基盤セ</dt>
-  <dd><a href="slides/14.pdf">スライド.pdf</a></dd>
-  <dd><a href="vib">»関連動画を見る！</a></dd>
-  <dt>第15週　減衰比と固有振動数／共振現象</dt>
-  <dd><a href="slides/15.pdf">スライド.pdf</a></dd>
-  <dd><a href="ex/07.pdf">レポート出題（第7回）.pdf</a>　（提出用紙 <a href="files/ReportDaishi.pdf">PDF</a>，<a href="files/ReportDaishi.doc">Word</a>）</dd>
-</dl>
+<p><img src="../img/pend_word_only.png" alt="印刷" /></p>
 
-<h3 id="テキストのダウンロード">テキストのダウンロード</h3>
-
-<ul>
-  <li><a href="files/mdyn2017text.pdf">2017年版PDF</a></li>
-</ul>
-
-<h3 id="プログラム例">プログラム例</h3>
-
-<ul>
-  <li><a href="scilab">Scilab版</a></li>
-</ul>
-
-<h3 id="お知らせ">お知らせ</h3>
-
-<ul>
-  <li>[2018-03-06] サイトを引っ越しました．</li>
-</ul>
+<p><a href="../">目次へもどる</a></p>
 
         
       </section>
