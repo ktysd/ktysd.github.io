@@ -1,1 +1,1 @@
-Sitemap: https://ktysd.github.io/sitemap.xml
+Sitemap: https://edu.katzlab.jp/sitemap.xml
