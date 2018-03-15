@@ -4862,6 +4862,16 @@ a.reversefootnote:hover {
   padding-top: 0;
   float: left;
 }
+@media (min-width: 64em) {
+  .breadcrumbs ol {
+    padding-left: 0;
+  }
+}
+@media (min-width: 80em) {
+  .breadcrumbs ol {
+    padding-left: 0;
+  }
+}
 
 .masthead__inner-wrap {
   padding: .2em 1em;
