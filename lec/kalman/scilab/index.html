@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>振動現象の例 - 吉田の教材文庫</title>
+<!-- begin _includes/seo.html --><title>プログラム例 (Scilab版) - 吉田の教材文庫</title>
 <meta name="description" content="講義と書籍のサポートページ">
 
 
@@ -17,8 +17,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="吉田の教材文庫">
-<meta property="og:title" content="振動現象の例">
-<meta property="og:url" content="https://edu.katzlab.jp/lec/mdyn/vib/">
+<meta property="og:title" content="プログラム例 (Scilab版)">
+<meta property="og:url" content="https://edu.katzlab.jp/lec/kalman/scilab/">
 
 
 
@@ -32,7 +32,7 @@
 
 
 
-<link rel="canonical" href="https://edu.katzlab.jp/lec/mdyn/vib/">
+<link rel="canonical" href="https://edu.katzlab.jp/lec/kalman/scilab/">
 
 
 
@@ -356,7 +356,7 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="振動現象の例">
+    <meta itemprop="headline" content="プログラム例 (Scilab版)">
     
     
     
@@ -396,7 +396,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://edu.katzlab.jp/lec/mdyn" itemprop="item"><span itemprop="name">Mdyn</span></a>
+          <a href="https://edu.katzlab.jp/lec/kalman" itemprop="item"><span itemprop="name">Kalman</span></a>
           <meta itemprop="position" content="3" />
         </li>
         <span class="sep">/</span>
@@ -405,7 +405,7 @@
       
       
       
-        <li class="current">振動現象の例</li>
+        <li class="current">プログラム例 (Scilab版)</li>
       
     
   </ol>
@@ -427,39 +427,50 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
               <ul class="toc__menu">
-  <li><a href="#機械制御系の振動">機械制御系の振動</a></li>
-  <li><a href="#建造物の振動">建造物の振動</a></li>
-  <li><a href="#化学反応系の振動bz反応">化学反応系の振動（BZ反応1）</a></li>
-  <li><a href="#経済系の振動為替レート">経済系の振動（為替レート）</a></li>
+  <li><a href="#カルマンフィルタ">カルマンフィルタ</a></li>
+  <li><a href="#lqg制御">LQG制御</a></li>
 </ul>
             </nav>
           </aside>
         
-        <h3 id="機械制御系の振動">機械制御系の振動</h3>
-<p>(引用：<a href="https://youtu.be/trukC6G44ro">https://youtu.be/trukC6G44ro</a>)</p>
+        <h3 id="カルマンフィルタ">カルマンフィルタ</h3>
+<ul>
+  <li>sceファイルの実行時に同じフォルダに必要
+    <ul>
+      <li><a href="KF.sci">KF.sci</a></li>
+      <li><a href="KBF.sci">KBF.sci</a></li>
+    </ul>
+  </li>
+  <li>カルマンフィルタ（1自由度振動）
+    <ul>
+      <li><a href="1dof_KBF.sce">1dof_KBF.sce</a></li>
+    </ul>
+  </li>
+  <li>Kalma-Bucyフィルタ（1自由度振動）
+    <ul>
+      <li><a href="1dof_kf.sce">1dof_kf.sce</a></li>
+    </ul>
+  </li>
+</ul>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/trukC6G44ro" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-
-<h3 id="建造物の振動">建造物の振動</h3>
-<p>(引用：<a href="https://youtu.be/3mt6KpWvpbM">https://youtu.be/3mt6KpWvpbM</a>)</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3mt6KpWvpbM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-
-<h3 id="化学反応系の振動bz反応">化学反応系の振動（BZ反応<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>）</h3>
-<p>(引用：<a href="https://youtu.be/qSUjKvop2SI">https://youtu.be/qSUjKvop2SI</a>)</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qSUjKvop2SI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-
-<h3 id="経済系の振動為替レート">経済系の振動（為替レート）</h3>
-
-<p><img src="5070b.gif" alt="" /></p>
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p><a href="https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%AD%E3%82%A6%E3%82%BD%E3%83%95%E3%83%BB%E3%82%B8%E3%83%A3%E3%83%9C%E3%83%81%E3%83%B3%E3%82%B9%E3%82%AD%E3%83%BC%E5%8F%8D%E5%BF%9C">ベロウソフ・ジャボチンスキー反応</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<h3 id="lqg制御">LQG制御</h3>
+<ul>
+  <li>sceファイルの実行時に同じフォルダに必要
+    <ul>
+      <li><a href="LQG.sci">LQG.sci</a></li>
+    </ul>
+  </li>
+  <li>1自由度機械振動系のLQG制御
+    <ul>
+      <li><a href="1dof_LQG.sce">1dof_LQG.sce</a></li>
+    </ul>
+  </li>
+  <li>クレーンのLQG制御
+    <ul>
+      <li><a href="crane_LQG.sce">crane_LQG.sce</a></li>
+    </ul>
+  </li>
+</ul>
 
         
       </section>
