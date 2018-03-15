@@ -1,1 +1,1 @@
-Sitemap: https://edu.katzlab.jp/sitemap.xml
+Sitemap: http://edu.katzlab.jp/sitemap.xml
