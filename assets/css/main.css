@@ -4854,6 +4854,15 @@ a.reversefootnote:hover {
   margin-bottom: 0.5rem;
 }
 
+.breadcrumbs {
+  padding-left: 0;
+}
+.breadcrumbs ol {
+  margin-top: 0;
+  padding-top: 0;
+  float: left;
+}
+
 .masthead__inner-wrap {
   padding: .2em 1em;
 }
