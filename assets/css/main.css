@@ -4883,6 +4883,7 @@ a.reversefootnote:hover {
 
 .toc {
   font-size: 0.95rem;
+  text-transform: none;
 }
 .toc h4 {
   margin-top: 0;
