@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>ファイル置き場 - 吉田の教材文庫</title>
+<!-- begin _includes/seo.html --><title>機械力学 - 吉田の教材文庫</title>
 <meta name="description" content="講義と書籍のサポートページ">
 
 
@@ -17,8 +17,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="吉田の教材文庫">
-<meta property="og:title" content="ファイル置き場">
-<meta property="og:url" content="http://edu.katzlab.jp/misc/">
+<meta property="og:title" content="機械力学">
+<meta property="og:url" content="http://edu.katzlab.jp/lec/mdyn/">
 
 
 
@@ -32,7 +32,7 @@
 
 
 
-<link rel="canonical" href="http://edu.katzlab.jp/misc/">
+<link rel="canonical" href="http://edu.katzlab.jp/lec/mdyn/">
 
 
 
@@ -242,7 +242,7 @@
             
             
 
-            <li><a href="http://edu.katzlab.jp/lec/mdyn/" class="">機械力学</a></li>
+            <li><a href="http://edu.katzlab.jp/lec/mdyn/" class="active">機械力学</a></li>
           
             
             
@@ -318,7 +318,7 @@
             
             
 
-            <li><a href="http://edu.katzlab.jp/misc/" class="active">ファイル置き場</a></li>
+            <li><a href="http://edu.katzlab.jp/misc/" class="">ファイル置き場</a></li>
           
             
             
@@ -340,7 +340,7 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="ファイル置き場">
+    <meta itemprop="headline" content="機械力学">
     
     
     
@@ -367,7 +367,18 @@
         <span class="sep">/</span>
       
       
-        <li class="current">ファイル置き場</li>
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://edu.katzlab.jp/lec" itemprop="item"><span itemprop="name">Lec</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+      
+        <li class="current">機械力学</li>
       
     
   </ol>
@@ -385,927 +396,107 @@
 
       <section class="page__content" itemprop="text">
         
-        <table>
-  <thead>
-  <tr>
-    <th>ファイル名</th>
-    <th>最終更新</th>
-  </tr>
-  </thead>
-  <tbody>
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-      <tr>
-        <td><a href="/misc/BifCont.pdf">BifCont.pdf</a></td>
-        <td>2011-07-22 16:59:29 +0900</td>
-      </tr>
-    
-  
-    
-    
-      <tr>
-        <td><a href="/misc/FightingRobo.pdf">FightingRobo.pdf</a></td>
-        <td>2013-10-10 09:19:31 +0900</td>
-      </tr>
-    
-  
-    
-    
-      <tr>
-        <td><a href="/misc/HowtoTechRep2015.pdf">HowtoTechRep2015.pdf</a></td>
-        <td>2015-04-06 19:22:34 +0900</td>
-      </tr>
-    
-  
-    
-    
-      <tr>
-        <td><a href="/misc/HowtoTechRep2015.pptx">HowtoTechRep2015.pptx</a></td>
-        <td>2015-04-06 19:22:39 +0900</td>
-      </tr>
-    
-  
-    
-    
-      <tr>
-        <td><a href="/misc/LinearSpace2015-03-11.pdf">LinearSpace2015-03-11.pdf</a></td>
-        <td>2015-03-11 12:41:43 +0900</td>
-      </tr>
-    
-  
-    
-    
-      <tr>
-        <td><a href="/misc/UdaiES2015.pdf">UdaiES2015.pdf</a></td>
-        <td>2016-07-26 09:06:14 +0900</td>
-      </tr>
-    
-  
-    
-    
-      <tr>
-        <td><a href="/misc/UdaiES2015.pptx">UdaiES2015.pptx</a></td>
-        <td>2016-07-26 09:06:20 +0900</td>
-      </tr>
-    
-  
-    
-    
-      <tr>
-        <td><a href="/misc/deriv071214.pdf">deriv071214.pdf</a></td>
-        <td>2011-07-22 17:11:57 +0900</td>
-      </tr>
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-</tbody>
-</table>
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
+              
+            </nav>
+          </aside>
+        
+        [slide repo]: https://github.com/ktysd/ktysd.github.io/blob/master/lec/mdyn/slides
+[PDF]: files/ReportDaishi.pdf
+[Word]: files/ReportDaishi.doc
+
+宇都宮大学工学部 機械システム工学科 「機械力学」
+
+### 授業内容
+
+第1週　ベクトル化
+: [スライド.pdf](slides/01.pdf)
+
+
+第2週　力の合成と分解
+: [スライド.pdf](slides/02.pdf)
+: レポート出題（第１回）
+
+
+第3週　トルクとその合成
+: [スライド.pdf](slides/03.pdf)
+
+第4週　剛体に働く力
+: [スライド.pdf](slides/04.pdf)
+: レポート出題（第2回）
+
+
+第5週　剛体の重心１
+: [スライド.pdf](slides/05.pdf)
+
+第6週　剛体の重心２
+: [スライド.pdf](slides/06.pdf)
+: レポート出題（第3回）
+
+: ついでにクリック！ [>>中間アンケート](https://docs.google.com/spreadsheet/viewform?formkey=dG9hT2ZmQnQ5V29fbXlzTHZBd2Z4VVE6MA)
+
+第7週　質点の運動
+: [スライド.pdf](slides/07.pdf)
+
+第8週　剛体の運動１
+: [スライド.pdf](slides/08.pdf)
+
+第9週　剛体の運動２
+: [スライド.pdf](slides/09.pdf)
+: レポート出題（第4回）
+
+
+第10週　運動量の保存則
+: [スライド.pdf](slides/10.pdf)
+: [>>関連動画を見る！](3d)
+
+第11週　エネルギーの保存則
+: [スライド.pdf](slides/11.pdf)
+: レポート出題（第5回）
+
+
+第12週　ロボットの運動方程式
+: [スライド.pdf](slides/12.pdf)
+
+第13週　ロボットシミュレーション　※基盤セ
+: [スライド.pdf](slides/13.pdf)
+: レポート出題（第6回）
+
+
+* レポートには，K,Lの２種類の値を記し，対応する運動状態をコマ送り（最低３コマ程度）で示せ．考察を忘れぬこと．
+
+第14週　振動と固有値　※基盤セ
+: [スライド.pdf](slides/14.pdf)
+: [>>関連動画を見る！](vib)
+
+第15週　減衰比と固有振動数／共振現象
+: [スライド.pdf](slides/15.pdf)
+: レポート出題（第7回）
+
+
+
+### テキストのダウンロード
+
+* [2017年版PDF](files/mdyn2017text.pdf)
+
+### プログラム例
+
+* [Scilab版](scilab)
+
+### お知らせ
+
+* [2017-04-07] テキストを改訂しました．
+* [2014-12-11] プログラム例をScilb版に差し替えました．
+* [2014-04-04] 2014年度用に情報を更新しました．
+* [2013-04-09] 2013年度用に情報を更新しました．
+* [2012-07-05] 「レポート用紙」を更新し，Word用を追加しました．
+* [2012-05-25] 「テキストの誤植訂正」をアップしました．
+* [2012-02-06] このページを開設しました．
+
+### QRコード
+![QRコード](QR_mdyn.png)
 
         
       </section>
