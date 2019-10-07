@@ -1,0 +1,11 @@
+# Fdb version 3
+["dvipdf"] 0 "main_POD.dvi" "main_POD.pdf" "main_POD" 0
+  "main_POD.dvi" 0 -1 0 "latex"
+  (generated)
+  "main_POD.pdf"
+["latex"] 1570407717 "main_POD.tex" "main_POD.dvi" "main_POD" 1570407721
+  "main_POD.aux" 1570407717 8 a94a2480d3289e625eea47cd1b285758 ""
+  "main_POD.tex" 0 -1 0 ""
+  (generated)
+  "main_POD.dvi"
+  "main_POD.log"
