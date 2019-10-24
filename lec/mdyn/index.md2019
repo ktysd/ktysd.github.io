@@ -396,146 +396,56 @@
           <aside class="sidebar__right">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
-              <ul class="toc__menu">
-  <li><a href="#授業内容">授業内容</a></li>
-  <li><a href="#テキストのダウンロード">テキストのダウンロード</a></li>
-  <li><a href="#プログラム例">プログラム例</a></li>
-  <li><a href="#qrコード">QRコード</a></li>
-  <li><a href="#お知らせ">お知らせ</a></li>
-</ul>
+              
             </nav>
           </aside>
         
-        
-<p>宇都宮大学工学部 機械システム工学科 「機械力学」</p>
+        [slide repo]: https://github.com/ktysd/ktysd.github.io/blob/master/lec/mdyn/slides
+[PDF]: files/ReportDaishi.pdf
+[Word]: files/ReportDaishi.doc
+[>>中間アンケート]: https://docs.google.com/spreadsheet/viewform?formkey=dG9hT2ZmQnQ5V29fbXlzTHZBd2Z4VVE6MA
 
-<h3 id="授業内容">授業内容</h3>
+宇都宮大学工学部 機械システム工学科 「機械力学」
 
-<table>
-  <thead>
-    <tr>
-      <th>週</th>
-      <th>内容</th>
-      <th>スライド</th>
-      <th>備考</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>ベクトル化</td>
-      <td><a href="slides/01.pdf">スライド.pdf</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>力の合成と分解</td>
-      <td><a href="slides/02.pdf">スライド.pdf</a></td>
-      <td>第1回レポート <a href="ex/rep01.pdf">»提出用紙.pdf</a></td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>トルクとその合成</td>
-      <td><a href="slides/03.pdf">スライド.pdf</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>剛体に働く力</td>
-      <td><a href="slides/04.pdf">スライド.pdf</a></td>
-      <td>第2回レポート <a href="ex/rep02.pdf">»提出用紙.pdf</a></td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>剛体の重心１</td>
-      <td><a href="slides/05.pdf">スライド.pdf</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>剛体の重心２</td>
-      <td><a href="slides/06.pdf">スライド.pdf</a></td>
-      <td>第3回レポート <a href="ex/rep03.pdf">»提出用紙.pdf</a><br /><a href="https://docs.google.com/spreadsheet/viewform?formkey=dG9hT2ZmQnQ5V29fbXlzTHZBd2Z4VVE6MA">»中間アンケート</a></td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>質点の運動</td>
-      <td><a href="slides/07.pdf">スライド.pdf</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>剛体の運動１</td>
-      <td><a href="slides/08.pdf">スライド.pdf</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>剛体の運動２</td>
-      <td><a href="slides/09.pdf">スライド.pdf</a></td>
-      <td>第4回レポート <a href="ex/rep04.pdf">»提出用紙.pdf</a></td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>運動量の保存則</td>
-      <td><a href="slides/10.pdf">スライド.pdf</a></td>
-      <td><a href="3d">»関連動画！</a></td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>エネルギーの保存則１</td>
-      <td><a href="slides/11.pdf">スライド.pdf</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>エネルギーの保存則２</td>
-      <td><a href="slides/11.pdf">スライド.pdf</a></td>
-      <td>第5回レポート <a href="ex/rep05.pdf">»提出用紙.pdf</a></td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>ロボットの運動方程式</td>
-      <td><a href="slides/12.pdf">スライド.pdf</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>ロボットシミュレーション１       <font color="red">※基盤セ</font></td>
-      <td><a href="slides/13.pdf">スライド.pdf</a></td>
-      <td>第6回レポート <a href="ex/rep06.doc">»提出用紙.doc</a></td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>ロボットシミュレーション２       <font color="red">※基盤セ</font></td>
-      <td><a href="slides/13.pdf">スライド.pdf</a></td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
+### 授業内容
 
-<h3 id="テキストのダウンロード">テキストのダウンロード</h3>
 
-<ul>
-  <li><a href="files/mdyn2017text.pdf">2017年版PDF</a></li>
-</ul>
+|週|内容                             |スライド                     |備考|
+|-----
+| 1|ベクトル化                       |[スライド.pdf](slides/01.pdf)||
+| 2|力の合成と分解                   |[スライド.pdf](slides/02.pdf)|第1回レポート [>>提出用紙.pdf](ex/rep01.pdf)|
+| 3|トルクとその合成                 |[スライド.pdf](slides/03.pdf)||
+| 4|剛体に働く力                     |[スライド.pdf](slides/04.pdf)|第2回レポート [>>提出用紙.pdf](ex/rep02.pdf)|
+| 5|剛体の重心１                     |[スライド.pdf](slides/05.pdf)||
+| 6|剛体の重心２                     |[スライド.pdf](slides/06.pdf)|第3回レポート [>>提出用紙.pdf](ex/rep03.pdf)<br>[>>中間アンケート]|
+| 7|質点の運動                       |[スライド.pdf](slides/07.pdf)||
+| 8|剛体の運動１                     |[スライド.pdf](slides/08.pdf)||
+| 9|剛体の運動２                     |[スライド.pdf](slides/09.pdf)|第4回レポート [>>提出用紙.pdf](ex/rep04.pdf)|
+|10|運動量の保存則                   |[スライド.pdf](slides/10.pdf)|[>>関連動画！](3d)|
+|11|エネルギーの保存則               |[スライド.pdf](slides/11.pdf)|第5回レポート [>>提出用紙.pdf](ex/rep05.pdf)|
+|12|ロボットの運動方程式             |[スライド.pdf](slides/12.pdf)||
+|13|ロボットシミュレーション         <font color="red">※基盤セ</font>|[スライド.pdf](slides/13.pdf)|第6回レポート [>>提出用紙.doc](ex/rep06.doc)|
+|14|振動と固有値 <font color="red">※基盤セ</font> |[スライド.pdf](slides/14.pdf)|[>>関連動画！](vib)|
+|15|減衰比と固有振動数／共振現象     |[スライド.pdf](slides/15.pdf)|第7回レポート [>>提出用紙.pdf](ex/rep07.pdf)|
 
-<h3 id="プログラム例">プログラム例</h3>
+### テキストのダウンロード
 
-<ul>
-  <li><a href="scilab">Scilab版</a></li>
-</ul>
+* [2017年版PDF](files/mdyn2017text.pdf)
 
-<h3 id="qrコード">QRコード</h3>
-<p><img src="QR_mdyn.png" alt="QRコード" /></p>
+### プログラム例
 
-<h3 id="お知らせ">お知らせ</h3>
+* [Scilab版](scilab)
 
-<ul>
-  <li>[2017-04-07] テキストを改訂しました．</li>
-  <li>[2014-12-11] プログラム例をScilb版に差し替えました．</li>
-  <li>[2012-02-06] このページを開設しました．</li>
-</ul>
+
+### QRコード
+![QRコード](QR_mdyn.png)
+
+
+### お知らせ
+
+* [2017-04-07] テキストを改訂しました．
+* [2014-12-11] プログラム例をScilb版に差し替えました．
+* [2012-02-06] このページを開設しました．
 
 
         
