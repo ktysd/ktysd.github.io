@@ -5005,6 +5005,14 @@ a.reversefootnote:hover {
   padding-top: 0;
   padding-bottom: 0;
 }
+.page__content th {
+  background: ivory;
+  border-top: 2px wheat solid;
+  border-bottom: 2px wheat solid;
+}
+.page__content td {
+  border-bottom: 1.5px wheat solid;
+}
 .page__content blockquote {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
