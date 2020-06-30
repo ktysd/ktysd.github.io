@@ -5077,6 +5077,10 @@ a.reversefootnote:hover {
   font-size: 0.7rem;
 }
 
+.nav__sub-title {
+  text-transform: none;
+}
+
 @media print {
   html {
     font-size: 14px;

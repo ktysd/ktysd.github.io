@@ -1,0 +1,504 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.1 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Python/Colab 超入門 - 吉田の教材文庫</title>
+<meta name="description" content="講義と書籍のサポートページ">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="吉田の教材文庫">
+<meta property="og:title" content="Python/Colab 超入門">
+<meta property="og:url" content="http://edu.katzlab.jp/lec/colab/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://edu.katzlab.jp/lec/colab/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="吉田の教材文庫 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="icon" href="/favicon.ico">
+<!-- end custom head snippets -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  </head>
+
+  <body class="layout--ktysd">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">吉田の教材文庫</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="http://www.katzlab.jp" >>> 研究室のページ</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/books/"><span class="nav__sub-title">書籍サポート</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/books/pb/" class="">ガチャではじめる確率論入門</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/books/ds/" class="">動的システム入門</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/books/tz/" class="">解くための材料力学</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/lec/colab/"><span class="nav__sub-title">Python/Colab 超入門</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/lec/scilab/"><span class="nav__sub-title">Scilab 超入門</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/1/" class="">Scilab の基本操作</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/2/" class="">各種演算など</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/3/" class="">プログラム・ファイルの作成</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/4/" class="">プログラム・ファイルの実行</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/5/" class="">グラフの印刷</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/lec/"><span class="nav__sub-title">講義資料</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/mdyn/" class="">機械力学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/robo/" class="">ロボット力学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/kalman/" class="">確率システム理論</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/vib7h/" class="">Excelで学ぶ振動基礎(7h)</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/dsys/" class="">動的システム@宮崎大学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/hoso/" class="">動的平衡と複雑系の科学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/kyoin/" class="">教員免許更新講習</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">その他資料</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/misc/" class="">ファイル置き場</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/gairon/" class="">機械システム工学概論</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Python/Colab 超入門">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    
+    
+    
+    
+      
+      
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://edu.katzlab.jp/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://edu.katzlab.jp/lec" itemprop="item"><span itemprop="name">Lec</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+      
+        <li class="current">Python/Colab 超入門</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Python/Colab 超入門
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><font color="red">※ Colab の利用には，Google (Gmail) のアカウントが必要です．</font></p>
+
+<hr />
+
+<p>数値計算で使用するプログラミング言語 Python と，その実行環境 Colab の使い方を速習します．</p>
+
+<ul>
+  <li><a href="https://ja.wikipedia.org/wiki/Python">Python</a> とは，人気沸騰中のプログラミング言語で，汎用性の高さがウリです．これまで複数のプログラミング言語を組み合わせないと書けなかった処理が，これ1つで書けてしまいます．AI分野の標準言語としても有名です．</li>
+  <li><a href="https://colab.research.google.com/notebooks/welcome.ipynb?hl=ja">Colab (Google Colaboratory)</a> とは，Google が無償提供している，クラウド型の Python 実行環境です．</li>
+  <li>Python 自体は，単体で PC にインストールして使うこともできますが，ここではメディア授業を考慮して，Colab 経由でブラウザから実行する方法を学びます．</li>
+</ul>
+
+<h3 id="下準備">下準備</h3>
+<ul>
+  <li><a href="1/">Colab のインストール</a></li>
+</ul>
+
+<h3 id="目次">目次</h3>
+<ul>
+  <li><a href="2/">Colab の基本操作</a></li>
+  <li><a href="3/">各種演算など</a></li>
+  <li><a href="4/">プログラム・ファイルの作成</a></li>
+  <li><a href="5/">プログラム・ファイルの実行</a></li>
+  <li><a href="6/">グラフの印刷</a></li>
+</ul>
+
+<h3 id="入手方法">入手方法</h3>
+
+<ul>
+  <li><a href="http://www.geocities.jp/rui_hirokawa/scilab/">http://www.geocities.jp/rui_hirokawa/scilab/</a> （日本語ページ．若干情報が古い）</li>
+  <li><a href="http://www.scilab.org/">http://www.scilab.org/</a> （本家）</li>
+  <li>その他，ぐぐると色々ヒットします．</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>フォロー</strong></li>
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Katsutoshi Yoshida. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

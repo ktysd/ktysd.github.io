@@ -1,0 +1,611 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.1 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Colab のインストール - 吉田の教材文庫</title>
+<meta name="description" content="講義と書籍のサポートページ">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="吉田の教材文庫">
+<meta property="og:title" content="Colab のインストール">
+<meta property="og:url" content="http://edu.katzlab.jp/lec/colab/1/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://edu.katzlab.jp/lec/colab/1/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="吉田の教材文庫 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="icon" href="/favicon.ico">
+<!-- end custom head snippets -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  </head>
+
+  <body class="layout--ktysd">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">吉田の教材文庫</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="http://www.katzlab.jp" >>> 研究室のページ</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/books/"><span class="nav__sub-title">書籍サポート</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/books/pb/" class="">ガチャではじめる確率論入門</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/books/ds/" class="">動的システム入門</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/books/tz/" class="">解くための材料力学</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/lec/colab/"><span class="nav__sub-title">Python/Colab 超入門</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/lec/scilab/"><span class="nav__sub-title">Scilab 超入門</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/1/" class="">Scilab の基本操作</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/2/" class="">各種演算など</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/3/" class="">プログラム・ファイルの作成</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/4/" class="">プログラム・ファイルの実行</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/5/" class="">グラフの印刷</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/lec/"><span class="nav__sub-title">講義資料</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/mdyn/" class="">機械力学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/robo/" class="">ロボット力学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/kalman/" class="">確率システム理論</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/vib7h/" class="">Excelで学ぶ振動基礎(7h)</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/dsys/" class="">動的システム@宮崎大学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/hoso/" class="">動的平衡と複雑系の科学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/kyoin/" class="">教員免許更新講習</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">その他資料</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/misc/" class="">ファイル置き場</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/gairon/" class="">機械システム工学概論</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Colab のインストール">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    
+    
+    
+    
+      
+      
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://edu.katzlab.jp/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://edu.katzlab.jp/lec" itemprop="item"><span itemprop="name">Lec</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://edu.katzlab.jp/lec/colab" itemprop="item"><span itemprop="name">Colab</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+      
+        <li class="current">Colab のインストール</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+      
+        <header>
+          
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#google-アカウントの取得">Google アカウントの取得</a></li>
+  <li><a href="#colab-のインストール">Colab のインストール</a></li>
+  <li><a href="#colab-の動作確認">Colab の動作確認</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p><a href="../">目次へもどる</a></p>
+
+<h3 id="google-アカウントの取得">Google アカウントの取得</h3>
+
+<ul>
+  <li>Colab (Google Colaboratory) は，Google のサービスなので，利用するには Google (Gmail) のアカウントが必要です．</li>
+  <li>持ってない人は取得してください．（Androidスマホユーザーは持ってるはず）</li>
+</ul>
+
+<p><font color="red">※ 以下の説明では，PC 版 Chrome ブラウザを使用しています．スマホ版や他のブラウザを使うと，表示内容が微妙に異なるかもしれません．</font></p>
+
+<h3 id="colab-のインストール">Colab のインストール</h3>
+
+<p>Colab の全機能を利用するには，自分の Google アカウントで インストール操作が必要です．</p>
+
+<ul>
+  <li>まず，自分のアカウントで「ドライブ」を起動します．</li>
+</ul>
+
+<p><img src="../img/010gmail_drive.jpg" alt="ドライブ" /></p>
+
+<ul>
+  <li>「マイドライブ」をクリックして，「その他」「＋アプリを追加」を選びます．
+    <ul>
+      <li>サブフォルダを作って，そこで同様の操作をすると，そのフォルダだけに Colab をインストールすることができます（他のフォルダに影響を与えない）．</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="../img/020add_app.jpg" alt="アプリを追加" /></p>
+
+<ul>
+  <li>検索ボタンをクリックして，</li>
+</ul>
+
+<p><img src="../img/030add_app_search.jpg" alt="アプリを検索" /></p>
+
+<ul>
+  <li>colaboratory とタイプしていくと，途中で「Colaboratory」がヒットするので，選びます．</li>
+</ul>
+
+<p><img src="../img/040add_app_search_col.jpg" alt="Colabを検索" /></p>
+
+<ul>
+  <li>「インストールボタン」をクリックします．</li>
+</ul>
+
+<p><img src="../img/050add_Colab_install.jpg" alt="インストール" /></p>
+
+<ul>
+  <li>認証を求められるので「続行」をクリックします．</li>
+</ul>
+
+<p><img src="../img/060add_Colab_continue.jpg" alt="認証続行" /></p>
+
+<ul>
+  <li>しばらくするとインストールが完了するので，「OK」をクリックします．</li>
+</ul>
+
+<p><img src="../img/070add_Colab_done.jpg" alt="OK" /></p>
+
+<p>インストールは以上です．</p>
+
+<h3 id="colab-の動作確認">Colab の動作確認</h3>
+
+<ul>
+  <li>ドライブに戻って「新規」をクリックします．</li>
+</ul>
+
+<p><img src="../img/080_new_menu.jpg" alt="新規" /></p>
+
+<ul>
+  <li>「その他」に「Google Colaboratory」が追加されているので，クリックします．</li>
+</ul>
+
+<p><img src="../img/090new_menu_colab.jpg" alt="その他" /></p>
+
+<ul>
+  <li><strong>【入力】</strong> 先頭のセルに，試しに「1+2」を入力します．</li>
+</ul>
+
+<p><img src="../img/100colab_exec.jpg" alt="Google Colaboratory" /></p>
+
+<ul>
+  <li><strong>【実行】</strong> セル内で，Ctrlキーを押しながらEnterキーを叩くと，実行されます．
+    <ul>
+      <li>Ctrl-Enter の代わりに，該当セルの再生ボタンを押しても実行できます．</li>
+      <li>ブラウザによっては，Shift-Enter でも実行できるかも．</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="../img/102colab_exec.jpg" alt="Google Colaboratory" /></p>
+
+<ul>
+  <li>
+    <p>実行結果の「3」はクラウド上の Python が計算しています．その結果を Colab がブラウザ上に表示しています．</p>
+  </li>
+  <li>
+    <p>ドライブに戻ると，さきほど新規作成した「Untitled0.ipynb」ができています．</p>
+  </li>
+</ul>
+
+<p><img src="../img/104colab_exec.jpg" alt="Google Colaboratory" /></p>
+
+<ul>
+  <li><strong>【Colabファイルの実行】</strong> 該当ファイルをダブルクリックすると，再び Colab が起動します．さきほどの実行結果がちゃんと保存されていますね．</li>
+</ul>
+
+<p><img src="../img/106colab_exec.jpg" alt="Google Colaboratory" /></p>
+
+<ul>
+  <li><strong>【再実行】</strong> これを改めて【実行】すれば，改めて計算がなされます．（この例では，入力が同じなので変わり映えしませんが）</li>
+  <li>それ以外の Colabファイルも，同様に，ドライブから開けば実行できます．</li>
+</ul>
+
+<p>動作確認は以上です．</p>
+
+<p><a href="../2">»次へ</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>フォロー</strong></li>
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Katsutoshi Yoshida. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
