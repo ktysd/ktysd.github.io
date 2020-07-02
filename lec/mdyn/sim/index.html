@@ -1,0 +1,563 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.1 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>12章 ロボットシミュレーション - 吉田の教材文庫</title>
+<meta name="description" content="講義と書籍のサポートページ">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="吉田の教材文庫">
+<meta property="og:title" content="12章 ロボットシミュレーション">
+<meta property="og:url" content="http://edu.katzlab.jp/lec/mdyn/sim/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://edu.katzlab.jp/lec/mdyn/sim/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="吉田の教材文庫 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="icon" href="/favicon.ico">
+<!-- end custom head snippets -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  </head>
+
+  <body class="layout--ktysd">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">吉田の教材文庫</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="http://www.katzlab.jp" >>> 研究室のページ</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/books/"><span class="nav__sub-title">書籍サポート</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/books/pb/" class="">ガチャではじめる確率論入門</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/books/ds/" class="">動的システム入門</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/books/tz/" class="">解くための材料力学</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/lec/colab/"><span class="nav__sub-title">Python/Colab 超入門</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/lec/scilab/"><span class="nav__sub-title">Scilab 超入門</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/1/" class="">Scilab の基本操作</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/2/" class="">各種演算など</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/3/" class="">プログラム・ファイルの作成</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/4/" class="">プログラム・ファイルの実行</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/scilab/5/" class="">グラフの印刷</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/lec/"><span class="nav__sub-title">講義資料</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/mdyn/" class="">機械力学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/robo/" class="">ロボット力学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/kalman/" class="">確率システム理論</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/vib7h/" class="">Excelで学ぶ振動基礎(7h)</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/dsys/" class="">動的システム@宮崎大学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/hoso/" class="">動的平衡と複雑系の科学</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/kyoin/" class="">教員免許更新講習</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">その他資料</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/misc/" class="">ファイル置き場</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/lec/gairon/" class="">機械システム工学概論</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="12章 ロボットシミュレーション">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    
+    
+    
+    
+      
+      
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://edu.katzlab.jp/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://edu.katzlab.jp/lec" itemprop="item"><span itemprop="name">Lec</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://edu.katzlab.jp/lec/mdyn" itemprop="item"><span itemprop="name">Mdyn</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+      
+        <li class="current">12章 ロボットシミュレーション</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">12章 ロボットシミュレーション
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#第13回までとの相違点">第13回までとの相違点</a></li>
+  <li><a href="#お知らせ">お知らせ</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        
+<ul>
+  <li>リンク元 → <a href="https://udai.c-learning.jp/s/">https://udai.c-learning.jp/s/</a> | Top &gt; 機械力学</li>
+  <li>以下，メディア授業の第14回，第15回（最終）の実施方法を，説明します．</li>
+</ul>
+
+<h3 id="第13回までとの相違点">第13回までとの相違点</h3>
+
+<ul>
+  <li>第14回，第15回（最終）は，週で区切らず，2週分をセットで実施します．</li>
+  <li>出席は毎週とります．小テストは実施しません．</li>
+  <li>小テストの代わりに，最終回にアンケートを実施します．（小テスト8点相当を与える）</li>
+</ul>
+
+<p>これは，遠隔でコンピュータ演習を実施する，初年度だからです．もしかすると，皆さんの通信環境によっては，コンピュータ演習に手こずるかもしれません．そこで，第14,15回は学力評価は実施しません．また，各自が自分のペースで進められるよう，週の区切りは設けません．</p>
+
+<p>最悪，コンピュータ演習を，全く実施できない人もでてくるかも知れません．そうなっても成績には影響しないので，夏休みの自由研究としてください．（遠隔での不具合対応は無理かも）</p>
+
+<h2 id="実施方法">実施方法</h2>
+
+<p>次の手順で進めてください．</p>
+
+<p>１．これまでと同様に，出席操作をします．（毎週）</p>
+
+<p>２．テキストの <strong>12章〜最後</strong> を，これまでと同様に自習します．（スライドは使いません）</p>
+
+<ul>
+  <li>コンピュータ演習に関する部分は，まずは雰囲気だけで結構です．</li>
+</ul>
+
+<p>３．コンピュータ演習の準備を行います．次のリンクを開き，指示に従ってください．</p>
+<ul>
+  <li><a href="https://github.com/ktysd/python-startup/blob/master/README.md">Python 入門（メディア授業兼用）</a> by 吉田
+    <ul>
+      <li>ウェブブラウザ上で，全て作業できます．</li>
+      <li>PCなら恐らく大丈夫．スマホだと表示まわりの不具合がでるかも．</li>
+      <li>不具合がでたら，アンケートに書いてください！　来年度に役立てます！</li>
+    </ul>
+  </li>
+</ul>
+
+<p>４．次のリンクを開き，コンピュータ演習を実施してください．（全てのコードセルを実行する）</p>
+
+<ul>
+  <li>
+    <p><a href="https://colab.research.google.com/github/ktysd/mdyn-pub/blob/master/robo/pend.ipynb">プログラム例と実習(pend)</a> by 吉田</p>
+
+    <ul>
+      <li>参考まで，実行時のスクリーンショットを <a href="http://htmlpreview.github.com/?https://github.com/ktysd/mdyn-pub/blob/master/robo/pend_output.html">実行例</a> に置いておきます．</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="注意点">注意点</h4>
+
+<ul>
+  <li>遠隔対応のため，急遽，演習環境をメディア基盤センターから Colab に変更し，プログラミング言語も，そこで使える Python に変更しました．</li>
+  <li>その結果，テキストの記述が，今回のコンピュータ演習と<font color="red">食い違ってます！</font></li>
+  <li>そこで大変お手数ですが，次の手順で，両者を関連付けながら進めてください．
+    <ol>
+      <li>まず，実習の意図を，テキストの <strong>実習12.1</strong>, <strong>実習12.2</strong>, <strong>実習12.3</strong>, <strong>実習12.4</strong> の日本語から理解します．</li>
+      <li>その上で，<a href="https://colab.research.google.com/github/ktysd/mdyn-pub/blob/master/robo/pend.ipynb">プログラム例と実習(pend)</a> 内の <strong>実習12.1(改)</strong>, <strong>実習12.2(改)</strong>, <strong>実習12.3(改)</strong>, <strong>実習12.4(改)</strong> に取り組んでください．</li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="お知らせ">お知らせ</h3>
+
+<ul>
+  <li>[2020-07-02] このページを開設しました．</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>フォロー</strong></li>
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Katsutoshi Yoshida. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
