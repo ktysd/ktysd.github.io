@@ -380,154 +380,102 @@
           <aside class="sidebar__right">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
-              <ul class="toc__menu">
-  <li><a href="#重要なお知らせ">重要なお知らせ</a></li>
-  <li><a href="#授業内容">授業内容</a></li>
-  <li><a href="#プログラム例">プログラム例</a></li>
-  <li><a href="#学生による作品集">学生による作品集　</a></li>
-</ul>
+              
             </nav>
           </aside>
         
-        
-<h1 id="ロボット力学">ロボット力学</h1>
+        [PDF1st]: files/Report_1st.pdf
+[Word]: files/ReportDaishi.doc
+[GroupWork]: group-work-2019
+[>>中間アンケートをお願いします]:https://docs.google.com/forms/d/e/1FAIpQLSeZUakkNoiTdmnOZVrrMbFdggoHSsGSJ_wqzf7_oLZeHHZf0g/viewform?formkey=dDVsZkZVZU5tT3dObHVUclIzTWQzREE6MA
 
-<p>宇都宮大学工学部 機械システム工学科 「ロボット力学」</p>
+# ロボット力学
 
-<font color="red">
-2020年度は，コロナウイルスのため，メディア授業を行います．このページではなく，次のURLを参照してください．</font>
-<ul>
-  <li><a href="https://udai.c-learning.jp/s/">https://udai.c-learning.jp/s/</a> | Top &gt; ロボット力学</li>
-</ul>
+宇都宮大学工学部 機械システム工学科 「ロボット力学」
 
-<hr />
-<font color="red">以下は2019年度以前の古い内容です．2020年度は使用しません．</font>
+### 重要なお知らせ
+* 週によって，講義室と基センを使い分けます　[>>場所と日程の一覧](schedule)
+* レポート提出先： 機械棟3階システム力学研究室(2) のレポートBOX
 
-<h3 id="重要なお知らせ">重要なお知らせ</h3>
-<ul>
-  <li>週によって，講義室と基センを使い分けます　<a href="schedule">»場所と日程の一覧</a></li>
-  <li>レポート提出先： 機械棟3階システム力学研究室(2) のレポートBOX</li>
-</ul>
 
 <!---
 * <font color='red'> 2019年1月23日(15回)を休講とし，1月12日に補講します．
 --->
 
-<h3 id="授業内容">授業内容</h3>
+### 授業内容
 
-<ul>
-  <li>第1週　ガイダンス</li>
-</ul>
+* 第1週　ガイダンス
 
-<h4 id="第１部配布資料pdf">第１部　<a href="files/part1_slide_6up.pdf">配布資料.pdf</a></h4>
+#### 第１部　[配布資料.pdf](files/part1_slide_6up.pdf)
 
-<ul>
-  <li>第2週　リンク機構と自由度</li>
-  <li>第3週　３瞬間中心の定理</li>
-  <li>第4週　速度の図式解法
-    <ul>
-      <li>コンパス（デバイダ）と定規を持参せよ．</li>
-      <li>レポート出題します．</li>
-      <li>第1回レポート用紙.pdf <a href="files/Report_1st.pdf">(PDF)</a></li>
-      <li><strong style="color: red"><em>拡大／縮小「なし」で印刷</em></strong>　してください．さもないと実寸とずれます．</li>
-    </ul>
-  </li>
-</ul>
+* 第2週　リンク機構と自由度
+* 第3週　３瞬間中心の定理
+* 第4週　速度の図式解法
+  * コンパス（デバイダ）と定規を持参せよ．
+  * レポート出題します．
+  * 第1回レポート用紙.pdf [(PDF)][PDF1st]
+  * ***拡大／縮小「なし」で印刷***{: style="color: red"}　してください．さもないと実寸とずれます．
 
-<h4 id="第２部配布資料pdf">第２部　<a href="files/part2.pdf">配布資料.pdf</a></h4>
+#### 第２部　[配布資料.pdf](files/part2.pdf)
 
-<ul>
-  <li>第5週　位置ベクトルと座標系</li>
-  <li>第6週　多体系の運動学</li>
-  <li>第7週　ロボット運動学
-    <ul>
-      <li><strong style="color: red">第２回レポート課題（実習2.7）</strong>
-        <ul>
-          <li>4自由度マニピュレータの運動学（式(7.3)～(7.10)）の導出方法を，高校生にも分かるように解説せよ．</li>
-          <li>誤答なしで基準点（可）．分かりやすさの工夫で加点．</li>
-          <li>提出期限： 次回授業日（補講日を除く）の前日まで．次々回以降は受け取らない．</li>
-          <li>複製が疑われるレポートはカンニングとみなす．</li>
-        </ul>
-      </li>
-      <li>第2回レポート用紙.pdf <a href="files/ReportDaishi.doc">(word)</a>
-<a href="files/part2sl-all.pdf">教師用.pdf</a></li>
-    </ul>
-  </li>
-</ul>
+* 第5週　位置ベクトルと座標系
+* 第6週　多体系の運動学
+* 第7週　ロボット運動学
+  * **第２回レポート課題（実習2.7）**{: style="color: red"}
+    * 4自由度マニピュレータの運動学（式(7.3)～(7.10)）の導出方法を，高校生にも分かるように解説せよ．
+    * 誤答なしで基準点（可）．分かりやすさの工夫で加点．
+    * 提出期限： 次回授業日（補講日を除く）の前日まで．次々回以降は受け取らない．
+    * 複製が疑われるレポートはカンニングとみなす．
+  * 第2回レポート用紙.pdf [(word)][Word]
+[教師用.pdf](files/part2sl-all.pdf)
 
-<h4 id="第３部配布資料pdf">第３部　<a href="files/part3.pdf">配布資料.pdf</a></h4>
 
-<ul>
-  <li>第8週　オイラー・ラグランジュ方程式</li>
-  <li>第9週　一般化力とその応用</li>
-  <li>第10週　接触と摩擦（バウンﾄﾞとスリップ）</li>
-  <li>第11週　床面に転倒する倒立ロボット
-    <ul>
-      <li><strong style="color: red">第3回レポート課題（実習3.5）</strong>
-        <ul>
-          <li>転倒に必要なカラクリと床面の設定（式(11.8)～(11.14)）の導出方法を，高校生にも分かるように解説せよ．</li>
-          <li>誤答なしで基準点（可）．分かりやすさの工夫で加点．</li>
-          <li>提出期限：　次回授業日（補講日を除く）の前日まで．次々回以降は受け取らない．</li>
-          <li>複製が疑われるレポートはカンニングとみなす．</li>
-        </ul>
-      </li>
-      <li>第3回レポート用紙.pdf <a href="files/ReportDaishi.doc">(word)</a>
-        <ul>
-          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeZUakkNoiTdmnOZVrrMbFdggoHSsGSJ_wqzf7_oLZeHHZf0g/viewform?formkey=dDVsZkZVZU5tT3dObHVUclIzTWQzREE6MA">»中間アンケートをお願いします</a> <font color="red">  ←ここよろしく！</font></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+#### 第３部　[配布資料.pdf](files/part3.pdf)
 
-<p><a href="files/part3sl-all.pdf">教師用.pdf</a></p>
+* 第8週　オイラー・ラグランジュ方程式
+* 第9週　一般化力とその応用
+* 第10週　接触と摩擦（バウンﾄﾞとスリップ）
+* 第11週　床面に転倒する倒立ロボット
+  * **第3回レポート課題（実習3.5）**{: style="color: red"}
+    * 転倒に必要なカラクリと床面の設定（式(11.8)～(11.14)）の導出方法を，高校生にも分かるように解説せよ．
+    * 誤答なしで基準点（可）．分かりやすさの工夫で加点．
+    * 提出期限：　次回授業日（補講日を除く）の前日まで．次々回以降は受け取らない．
+    * 複製が疑われるレポートはカンニングとみなす．
+  * 第3回レポート用紙.pdf [(word)][Word]
+    * [>>中間アンケートをお願いします] <font color="red">  ←ここよろしく！</font>
 
-<h4 id="第４部配布資料pdf">第４部　<a href="files/part4.pdf">配布資料.pdf</a></h4>
+[教師用.pdf](files/part3sl-all.pdf)
 
-<p style="color: red">(a) 第４部は出席をとります．実験実習と同様に必ず全回出席してください．</p>
-<p style="color: red">(b) 「タダ乗り」を防ぐため，欠席者は大幅に減点します．</p>
+#### 第４部　[配布資料.pdf](files/part4.pdf)
 
-<ul>
-  <li>第12週　対戦型ロボット・シミュレータの作成
-    <ul>
-      <li>4章の問題 4.x を全て，グループで解決せよ！
-        <ul>
-          <li>特に，<a href="group-work-2019">レポート課題</a></li>
-          <li>参考：学生による作品集　<a href="results">»動画リスト</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>第13週　研究課題（グループワーク１）</p>
-  </li>
-  <li>
-    <p>第14週　研究課題（グループワーク２）</p>
-  </li>
-  <li>第15週　競技会（発表を含む）／まとめ
-    <ul>
-      <li><strong style="color: red">第4回レポート課題</strong>
-        <ul>
-          <li>詳細は<a href="group-work-2019">»こちら</a></li>
-        </ul>
-      </li>
-      <li>第4回レポート用紙.pdf <a href="files/ReportDaishi.doc">(word)</a></li>
-      <li>学生による作品集　<a href="results">»動画リスト</a></li>
-    </ul>
-  </li>
-</ul>
+  (a) 第４部は出席をとります．実験実習と同様に必ず全回出席してください．
+  {: style="color: red"}
+  (b) 「タダ乗り」を防ぐため，欠席者は大幅に減点します．
+  {: style="color: red"}
 
-<h3 id="プログラム例">プログラム例</h3>
+* 第12週　対戦型ロボット・シミュレータの作成
+  * 4章の問題 4.x を全て，グループで解決せよ！
+    * 特に，[レポート課題][GroupWork]
+    * 参考：学生による作品集　[>>動画リスト](results)
 
-<ul>
-  <li><a href="scilab">Scilab版</a></li>
-</ul>
+* 第13週　研究課題（グループワーク１）
 
-<h3 id="学生による作品集">学生による作品集　</h3>
+* 第14週　研究課題（グループワーク２）
 
-<ul>
-  <li><a href="results">動画リスト</a></li>
-</ul>
+* 第15週　競技会（発表を含む）／まとめ
+  * **第4回レポート課題**{: style="color: red"}
+    * 詳細は[>>こちら][GroupWork]
+  * 第4回レポート用紙.pdf [(word)][Word]
+  * 学生による作品集　[>>動画リスト](results)
+
+### プログラム例
+
+* [Scilab版](scilab)
+
+### 学生による作品集　
+
+* [動画リスト](results)
+
 
 
         
